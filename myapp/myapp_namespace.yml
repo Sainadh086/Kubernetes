@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: myapp
+  labels:
+    app: myapp
+    env: test
+    deploy: argocd
+    gitops: true
+    project: short-url
