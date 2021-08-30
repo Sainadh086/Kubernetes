@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: url-shortner
-    app.kubernetes.io/instance: url-shortner
+    app.kubernetes.io/instance: myapp1
     env: test
     type: restapi
   name: url-shortner
