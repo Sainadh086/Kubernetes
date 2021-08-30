@@ -13,8 +13,6 @@ spec:
   selector:
     matchLabels:
       app: url-shortner
-      env: test
-      type: restapi
   template:
     metadata:
       labels:
