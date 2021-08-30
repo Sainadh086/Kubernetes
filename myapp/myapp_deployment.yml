@@ -2,24 +2,24 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: url-shortener
+    app: url-shortner
     app.kubernetes.io/instance: url-shortner
     env: test
     type: restapi
-  name: url-shortener
+  name: url-shortner
   namespace: myapp
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: url-shortener
+      app: url-shortner
       env: test
       type: restapi
   template:
     metadata:
       labels:
-        app: url-shortener
+        app: url-shortner
     spec:
       containers:
-        - image: 'docker.io/sainadh086/url-shortner:latest'
-          name: url-shortener
+        - image: 'sainadh086/url-shortner:latest'
+          name: url-shortner
